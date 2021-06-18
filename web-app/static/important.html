@@ -1,0 +1,46 @@
+<!doctype html> 
+<html lang="en-gb"> 
+<meta charset="utf-8"> 
+<title>Important</title> 
+<link rel="stylesheet" href="important.css">  
+<script type="module" src="main.js"></script> 
+
+<body>
+<h1 id="ImportantHeading">Important</h1>
+
+<li id="importantList" readonly="readonly" style="list-style: none;"></li>
+
+<script>
+    document.onmousemove = function () {
+        const importantList = document.getElementById("importantList")
+        let toUse = [];
+        let completed = [];
+        let e = Object.entries(sessionStorage).sort((a, b) => b[0].localeCompare(a[0]));
+        e.forEach (Element => {
+            if (Element[0][0] === "i") {
+                toUse.unshift(Element[1]);
+            } else if (Element[0][0] === "d") {
+                completed.push(Element[1]);
+            }
+        });
+        let toDisplay = [];
+        toUse.forEach(Element => {
+            if (completed.includes(Element) === false) {
+                toDisplay.push(Element);
+            }
+        })
+        importantList.innerHTML = toDisplay.join("<li style=list-style:none>" + "</li>");
+    }
+</script>
+
+<div class="sideNav">
+    <li>
+        <ul><a href="tasks.html">Tasks</a></ul>
+        <ul><a href="today.html">Today</a></ul>
+        <ul><a href="calendar.html">Calendar</a></ul>
+        <ul><a href="wellbeing.html">Wellbeing</a></ul>
+    </li>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!doctype html> 
+<html lang="en-gb"> 
+<meta charset="utf-8"> 
+<title>Calendar</title> 
+<link rel="stylesheet" href="calendar.css">  
+<script type="module" src="calendar.js"></script> 
+
+<body>
+<h1 id="CalendarHeading">Calendar</h1>
+<h2 id="monthHeading"></h2>
+<table id="calendarTable">
+    <col>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+    </col>
+    <tr>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+    </tr>
+    <tr>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+    </tr>
+    <tr>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+    </tr>
+    <tr>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+    </tr>
+    <tr>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+    </tr>
+    <tr>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+        <td class="dateCell"></td>
+    </tr>
+</table>
+<div id="dailyTasksDisplay">
+    <div class="tasksModalContent">
+        <p id="dailyTasksHeading">Tasks for Today</p>
+        <li id="dailyTasks" readonly="readonly"></li>
+    </div>
+</div>
+<div id="timesModal" class="timesModalClass">
+    <div class="timesModalContent">
+        <p id="selectStartTime">Select Start Time</p>
+        <div class="hourStartDropdown">
+            <form>
+                <label id="selectHourStart">Select Hour</label>
+                <select id="selectStartHour">
+                    <option value="00:00">00:00</option>
+                    <option value="01:00">01:00</option>
+                    <option value="02:00">02:00</option>
+                    <option value="03:00">03:00</option>
+                    <option value="04:00">04:00</option>
+                    <option value="05:00">05:00</option>
+                    <option value="06:00">06:00</option>
+                    <option value="07:00">07:00</option>
+                    <option value="08:00">08:00</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                    <option value="22:00">22:00</option>
+                    <option value="23:00">23:00</option>
+                </select>
+            </form>
+        </div>
+        <div class="minuteStartDropdown">
+            <form>  
+                <label id="selectMinuteStart"> Select Minute </label>  
+                <select id="selectStartMinute">  
+                    <option value="0:00">0:00</option>
+                    <option value="0:15">0:15</option>  
+                    <option value="0:30">0:30</option>  
+                    <option value="0:45">0:45</option>    
+                </select>  
+            </form>
+        </div>
+        <p id="selectEndTime">Select End Time</p>
+        <div class="hourEndDropdown">
+            <form>
+                <label id="selectHourEnd">Select Hour</label>
+                <select id="selectEndHour">
+                    <option value="00:00">00:00</option>
+                    <option value="01:00">01:00</option>
+                    <option value="02:00">02:00</option>
+                    <option value="03:00">03:00</option>
+                    <option value="04:00">04:00</option>
+                    <option value="05:00">05:00</option>
+                    <option value="06:00">06:00</option>
+                    <option value="07:00">07:00</option>
+                    <option value="08:00">08:00</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                    <option value="22:00">22:00</option>
+                    <option value="23:00">23:00</option>
+                </select>
+            </form>
+        </div>
+        <div class="minuteEndDropdown">
+            <form>  
+                <label id="selectMinuteEnd"> Select Minute </label>  
+                <select id="selectEndMinute">  
+                    <option value="0:00">0:00</option>
+                    <option value = "0:15">0:15</option>  
+                    <option value = "0:30">0:30</option>  
+                    <option value = "0:45">0:45</option>    
+                </select>  
+            </form>
+        </div>
+    </div>
+    <button id="timeOKButton">OK</button>
+</div>
+
+<div class="sideNav">
+    <li>
+        <ul><a href="tasks.html">Tasks</a></ul>
+        <ul><a href="important.html">Important</a></ul>
+        <ul><a href="today.html">Today</a></ul>
+        <ul><a href="wellbeing.html">Wellbeing</a></ul>
+    </li>
+</div>
+
+
+</body>
+</html>

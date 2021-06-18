@@ -1,0 +1,99 @@
+body {
+    background-color: white;
+}
+
+.sideNav {
+    height: 100%; 
+    width: 10%; 
+    position: absolute;
+    z-index: 1; 
+    top: 0; 
+    left: 0%;
+    background-color: rgb(21, 117, 124); 
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s;
+}
+
+.sideNav a {
+    padding: 0px 0px 0px 0px;
+    text-decoration: none;
+    text-align: left;
+    position: relative;
+    left: -30%;
+    font-family: runda, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3 vw;
+    color: white;
+    display: "block";
+    transition: 0.3s;
+}
+
+.sideNav a:hover {
+    color: #f1f1f1;
+}
+
+#WellbeingHeading {
+    color: rgb(21, 117, 124);
+    font-family: europa, sans-serif;
+    font-weight: 60 vw;
+    font-style: normal;
+    text-align: center;
+}
+#QuotesHeading {
+    color: rgb(21, 117, 124);
+    font-family: europa, sans-serif;
+    font-weight: 60 vw;
+    font-style: normal;
+    position: relative;
+    text-align: center;
+}
+#quoteOfTheDay {
+    color: black;
+    font-family: runda, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+    text-align: center;
+}
+#author {
+    color: black;
+    font-family: runda, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-style: italic;
+    font-weight: 100;
+    position: relative;
+    text-align: center;
+}
+#yourDay {
+    color: rgb(21, 117, 124);
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align: center
+}
+#todayTasksIntro {
+    color: black;
+    font-family: runda, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+    text-align: center;
+}
+#completedTasks {
+    color: black;
+    font-family: runda, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+    text-align: center;
+}
+#todayTasksConc {
+    color: black;
+    font-family: runda, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+    text-align: center;
+}

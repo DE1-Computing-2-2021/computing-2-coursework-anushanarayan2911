@@ -1,0 +1,98 @@
+body {
+    background-color: white;
+}
+h1 {
+    color: rgb(21, 117, 124);
+    font-family: europa, sans-serif;
+    font-weight: 900;
+    font-size: 90 vw;
+    font-style: normal;
+    text-align: center;
+}
+#Description {
+    color: black;
+    font-family: runda, sans-serif;
+    font-weight: 40 vw;
+    font-style: normal;
+    text-align: center;
+}
+#Tasks {
+    color: rgb(21, 117, 124);
+    font-family: europa, sans-serif;
+    font-weight: 60 vw;
+    font-style: normal;
+    position: absolute;
+    top: 30%;
+    right: 85%;
+}
+#Important {
+    color: rgb(21, 117, 124);
+    font-family: europa, sans-serif;
+    font-weight: 60 vw;
+    font-style: normal;
+    position: absolute;
+    top: 30%;
+    right: 65%;
+}
+#Today {
+    color: rgb(21, 117, 124);
+    font-family: europa, sans-serif;
+    font-weight: 60 vw;
+    font-style: normal;
+    position: absolute;
+    top: 30%;
+    right: 50%;
+}
+#Calendar {
+    color: rgb(21, 117, 124);
+    font-family: europa, sans-serif;
+    font-weight: 60 vw;
+    font-style: normal;
+    position: absolute;
+    top: 30%;
+    right: 32.5%;
+}
+#Wellbeing {
+    color: rgb(21, 117, 124);
+    font-family: europa, sans-serif;
+    font-weight: 60 vw;
+    font-style: normal;
+    position: absolute;
+    top: 30%;
+    right: 11%;
+}
+#TasksIcon {
+    height: 10%;
+    width: 5%;
+    position: absolute;
+    top: 40%;
+    right: 85%;
+}
+#ImportantIcon {
+    height: 10%;
+    width: 4.5%;
+    position: absolute;
+    top: 40%;
+    right: 67%;
+}
+#TodayIcon {
+    height: 10%;
+    width: 4.5%;
+    position: absolute;
+    top: 40%;
+    right: 50.5%;
+}
+#CalendarIcon {
+    height: 10%;
+    width: 4%;
+    position: absolute;
+    top: 40%;
+    right: 34%;
+}
+#WellbeingIcon {
+    height: 10%;
+    width: 4.5%;
+    position: absolute;
+    top: 40%;
+    right: 13%;
+}

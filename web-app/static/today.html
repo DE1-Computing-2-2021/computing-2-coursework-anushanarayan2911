@@ -1,0 +1,46 @@
+<!doctype html> 
+<html lang="en-gb"> 
+<meta charset="utf-8" http-equiv="Access-Control-Allow-Origin" content="C:\Users\anush\OneDrive\Documents\University\Year 1\Computing 2\Version 6\web-app\tasks.html"> 
+<title>Today</title> 
+<link rel="stylesheet" href="today.css">  
+<script type="module" src="main.js"></script> 
+
+<body>
+<h1 id="TodayHeading">Today</h1>
+
+<li id="todayList" readonly="readonly" style="list-style: none;"></li>
+
+<script>
+    document.onmousemove = function () {
+        const todayList = document.getElementById("todayList")
+        let toUse = [];
+        let completed = [];
+        let e = Object.entries(sessionStorage).sort((a, b) => b[0].localeCompare(a[0]));
+        e.forEach (Element => {
+            if (Element[0][0] === "t") {
+                toUse.unshift(Element[1]);
+            } else if (Element[0][0] === "d") {
+                completed.push(Element[1]);
+            }
+        });
+        let toDisplay = [];
+        toUse.forEach(Element => {
+            if (completed.includes(Element) === false) {
+                toDisplay.push(Element);
+            }
+        })
+        todayList.innerHTML = toDisplay.join("<li style=list-style:none>" + "</li>");
+    }
+</script>
+
+<div class="sideNav">
+    <li>
+        <ul><a href="tasks.html">Tasks</a></ul>
+        <ul><a href="important.html">Important</a></ul>
+        <ul><a href="calendar.html">Calendar</a></ul>
+        <ul><a href="wellbeing.html">Wellbeing</a></ul>
+    </li>
+</div>
+
+</body>
+</html>
